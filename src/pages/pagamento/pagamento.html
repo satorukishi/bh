@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>pagamento</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+
+<ion-list>
+	<ion-item>
+		<ion-avatar item-start><ion-icon name="person"></ion-icon></ion-avatar>
+	  	<ion-input placeholder="Nome igual cartao"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-avatar item-start><ion-icon name="md-card"></ion-icon></ion-avatar>
+	  <ion-input placeholder="Numero Cartão"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-avatar item-start><ion-icon name="ios-card-outline"></ion-icon></ion-avatar>
+	  	<ion-input placeholder="CCV"></ion-input>
+	</ion-item>
+</ion-list>
+
+  <ion-col text-center>
+    <button ion-button clear small color="secondary" icon-start>
+      <ion-icon name='logo-usd'></ion-icon>
+      R$80,00
+    </button>
+
+  </ion-col>
+
+  
+	<div padding>
+      <button ion-button color="primary" block (click)="pagamento()"> Confirmar</button>
+  </div>
+
+
+</ion-content>

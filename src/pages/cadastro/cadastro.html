@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>cadastro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" #nome></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>E-mail</ion-label>
+      <ion-input type="E-mail" #email></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Celular</ion-label>
+      <ion-input type="text" #celular></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button color="primary" block (click)="cadastrar()"> Cadastrar </button>
+    </div>
+
+</ion-content>

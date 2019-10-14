@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Barbeiros</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="logout()" >
+          <ion-icon class="toolbar-icon" name="log-out"></ion-icon>
+        </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	
+  <!-- <ion-card (click)="confirmacao()" *ngFor="let post of posts"> -->
+    <ion-card (click)="confirmacao($event, post)" *ngFor="let post of posts"> 
+
+    <img [src]="post.img ? post.img : 'http://barberinhome.com.br/app/fotos/none.png'"/>
+
+    <ion-card-content >
+      <ion-card-title>
+        {{post.nome_barber}}
+      </ion-card-title>
+    </ion-card-content>
+
+    <ion-row no-padding  >
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          4.9
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='cut'></ion-icon>
+          Exp. +5 anos
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+</ion-content>

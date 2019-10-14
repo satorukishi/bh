@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Agenda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-list-header>
+    Dados de atendimento
+  </ion-list-header>
+
+  <ion-list>
+    <ion-item *ngFor="let post of posts">
+      <ion-avatar item-start>
+        <img [src]="post.img ? post.img : 'http://barberinhome.com.br/app/fotos/none.png' "/>
+      </ion-avatar>
+      <h2>{{post.nome_barber}}</h2>
+      <p><b>Dia:</b> {{post.data | date : 'dd MMM yyyy'}} - <b>hora:</b> {{post.hora}}</p>
+      <p><b>Endereco:</b> {{post.endereco}}</p>
+      <h3>Status: {{post.status === '0' ? 'Aguardando' : 'Atendimento Realizado' }}</h3>
+    </ion-item>
+
+  </ion-list>
+	
+    
+</ion-content>
