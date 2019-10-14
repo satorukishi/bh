@@ -1,0 +1,9 @@
+{
+  "name": "barberinhome",
+  "app_id": "5fd58706",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "backend": "pro"
+}
